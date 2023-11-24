@@ -3,3 +3,4 @@ html2text
 nltk
 scikit-learn
 matplotlib
+ipykernel
