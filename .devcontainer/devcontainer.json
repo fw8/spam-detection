@@ -1,6 +1,9 @@
 {
   "image": "mcr.microsoft.com/devcontainers/python:3",
-  "postStartCommand": "pip install -r requirements.txt",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "containerEnv": {
+    "MY_VARIABLE": "${localEnv:MY_VARIABLE}"
+  },
   "customizations": {
     "vscode": {
       "settings": {
